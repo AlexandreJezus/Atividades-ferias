@@ -1,13 +1,28 @@
-// Faça um script de javascript que gerencia (CRUD) as atividades que o usuário fez nas férias, o usuário diz o dia e as atividades que realizou no dia.
+const prompt = require("prompt-sync")();
+const funcao = require("./funcao.js");
 
-// Será utilizado:
-// Variáveis
-// Array
-// Objeto
-// Condicionais (utilize tando switch, como if else)
-// Laços de repetição (utilize forEach)
-// Entrada e Saída
-// Funções (Utilize function, arrow function e função anônima)
-// Módulos (Toda a lógica referente às funções de CRUD e o armazenamento deve estar em um módulo separado do arquivo principal)
-// Git/Github (Crie um repositório publico, e envie nesta atividade o link)
-// NPM (Utilize o pacote prompt-sync para interagir com usuário)
+function menuInicial() {
+  let input = prompt(
+    `Escolha uma opção:
+      1. Adicionar o dia
+      2. Remover o dia
+      3. Listar os dias
+      4. Sair
+      5. Atualizar o dia`
+  );
+  let op = +prompt("Digite a opção: ");
+  return op;
+}
+function crud(opcao) {
+  if (opcao === 1) {
+  } else if (opcao === 2) {
+  } else if (opcao === 3) {
+  } else if (opcao === 4) {
+  } else if (opcao === 5) {
+  }
+}
+
+while (true) {
+  let conclusao = menuInicial();
+  crud(opcao);
+}
